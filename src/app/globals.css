@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-layout {
+  @apply relative flex h-screen items-center bg-gradient-to-b from-white/50 to-primary  justify-center lg:justify-center w-full overflow-hidden;
+}
+
+.form-control {
+  @apply flex flex-col;
+}
+
+.form-label {
+  @apply text-base font-semibold text-gray-500;
+}
+
+.form-input {
+  @apply flex h-10 w-full gap-2 border-b border-primary outline-none placeholder:text-black/30;
+}
+
+.form-textarea {
+  @apply h-24 rounded-md border-2 border-primary bg-black/20 p-4 outline-0;
+}
+
+.form-button {
+  @apply w-full rounded-md border-2 h-12 border-primary bg-primary px-4 py-2 font-semibold text-white outline-none transition-colors duration-300 hover:border hover:bg-transparent hover:text-primary;
+}
+
+.form-error-label {
+  @apply text-sm text-destructive;
+}
+
+.event-form-field {
+  @apply rounded-xl bg-primary p-2 text-lg font-light text-white outline-none hover:border hover:border-primary hover:bg-white hover:text-black;
+}
+
+.input-style {
+  @apply rounded-lg bg-gray-300 px-4 py-2 outline-none placeholder:text-gray-500;
+}
+
+.form-layout {
+  @apply flex flex-col rounded-2xl bg-[#f4f4f4] p-6 shadow-lg shadow-black/10;
+}
+
+.sidebar-link {
+  @apply py-2 px-4 hover:bg-black/20 rounded-lg w-full;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 247, 71%, 67%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 246, 85%, 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

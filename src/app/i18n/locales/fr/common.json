@@ -1,0 +1,24 @@
+{
+  "hello-world": "Olá - ConectaEventos",
+  "dashboard-area": {
+    "title": "Administração"
+  },
+  "profile-page": {
+    "title": "Conta | Perfil"
+  },
+  "pofile-page": {},
+  "edit-profile-page": {
+    "title": "Editar Perfil",
+    "user-info-title": "Meus Dados",
+    "user-info-edit-button": "Editar",
+    "user-info": {
+      "type": "Visitante",
+      "text-1": "Biografia",
+      "text-2": "Nome",
+      "text-3": "E-mail",
+      "text-4": "Gênero",
+      "text-5": "Telefone",
+      "text-6": "Data de Nascimento"
+    }
+  }
+}

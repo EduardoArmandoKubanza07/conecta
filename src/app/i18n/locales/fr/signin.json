@@ -1,0 +1,9 @@
+{
+  "email-label": "Email",
+  "email-placeholder": "johndoe@example.com",
+  "password-label": "Mot de passe",
+  "password-placeholder": "********",
+  "forgot-password-label": "Mot de passe oublié ?",
+  "submit-button-label": "Se connecter",
+  "sign-up-link-label": "Vous n'avez pas de compte ? Créer un compte"
+}
